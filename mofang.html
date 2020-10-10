@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.a{
+			position: relative;
+			margin: 0 auto;
+			margin-top: 400px;
+			transform-style: preserve-3d;
+			transform: rotateX(30deg) rotateY(20deg);
+			width: 400px;
+			height: 400px;
+			animation: cc 5s linear infinite;
+		}
+		.ss{
+			position: absolute;
+			top: 100px;
+			left: 100px;
+		}
+		@keyframes cc {
+			to {
+				transform: rotateX(360deg) rotateY(360deg);
+			}
+		}
+		.b{
+			width: 400px;
+			height: 400px;
+			background-color: red;
+			transform: translateZ(200px);
+		}
+		.a:hover .c{
+			box-shadow: 1px 1px 20px red;
+		}
+		.c{
+			width: 400px;
+			height: 400px;
+			background-color: blue;
+			transform: translateZ(-200px);
+		}
+		.a:hover .c{
+			box-shadow: 1px 1px 2px blue;
+		}
+		.d{
+			width: 400px;
+			height: 400px;
+			background-color: yellow;
+			transform: rotateY(90deg)  translateZ(200px);
+		}
+		.a:hover .d{
+			box-shadow: 1px 1px 2px yellow;
+		}
+		.e{
+			width: 400px;
+			height: 400px;
+			background-color: pink;
+			transform: rotateY(90deg)  translateZ(-200px);
+		}
+		.a:hover .e{
+			box-shadow: 1px 1px 2px pink;
+		}
+		.f{
+			width: 400px;
+			height: 400px;
+			background-color: orange;
+			transform: rotateX(90deg)  translateZ(-200px);
+		}
+		.a:hover .f{
+			box-shadow: 1px 1px 2px orange;
+		}
+		.g{
+			width: 400px;
+			height: 400px;
+			background-color: purple;
+			transform: rotateX(90deg)  translateZ(200px);
+		}
+		.a:hover .g{
+			box-shadow: 1px 1px 2px purple;
+		}
+		.ee{
+			opacity: .5;
+			background-color: #000;
+			width: 600px;
+			height: 600px;
+			position: absolute;
+		}
+		.h{
+			background-color: #000;
+			transform: translateZ(300px);
+		}
+		.a:hover .h{
+			transform: translateZ(400px);
+		}
+		.i{
+			background-color: #000;
+			transform: translateZ(-300px);
+		}
+		.a:hover .i{
+			transform: translateZ(-400px);
+		}
+		.j{
+			transform: rotateY(90deg)  translateZ(300px);
+		}
+		.a:hover .j{
+			transform: rotateY(90deg)  translateZ(400px);
+		}
+		.k{
+			transform: rotateY(90deg)  translateZ(-300px);
+		}
+		.a:hover .k{
+			transform: rotateY(90deg)  translateZ(-400px);
+		}
+		.l{
+			transform: rotateX(90deg)  translateZ(-300px);
+		}
+		.a:hover.l{
+			transform: rotateX(90deg)  translateZ(-400px);
+		}
+		.m{
+			transform: rotateX(90deg)  translateZ(300px);
+		}
+		.a:hover .m{
+			transform: rotateX(90deg)  translateZ(400px);
+		}
+	</style>
+</head>
+<body>
+	<div class="a">
+		<div class="b ss"></div>
+		<div class="c ss"></div>
+		<div class="d ss"></div>
+		<div class="e ss"></div>
+		<div class="f ss"></div>
+		<div class="g ss"></div>
+		<div class="h ee"></div>
+		<div class="i ee"></div>
+		<div class="j ee"></div>
+		<div class="k ee"></div>
+		<div class="l ee"></div>
+		<div class="m ee"></div>
+	</div>
+</body>
+</html>
